@@ -1,0 +1,28 @@
+$ docker compose ps web --format '{{.Name}} {{.Status}}'
+guestbook-web-1 Up 6 seconds (healthy)
+guestbook-web-2 Up 6 seconds (healthy)
+guestbook-web-3 Up 6 seconds (healthy)
+$ docker stop 36c08b9839a48f48d672bc84fa7b4ef8b7b5ce45fa429db0cbc83c35fdb63382 >/dev/null && echo 'web 하나 중지 (docker stop)'
+web 하나 중지 (docker stop)
+$ docker compose ps web --format '{{.Name}} {{.Status}}'
+guestbook-web-1 Up 16 seconds (healthy)
+guestbook-web-3 Up 16 seconds (healthy)
+$ /home/edwin/devops/week07/keep-web3.sh --once
+[15:36:31] web 실행 중 2개 (목표 3개) → 복구 시작
+[15:36:32] 복구 완료 → web 3개
+$ docker compose ps web --format '{{.Name}} {{.Status}}'
+guestbook-web-1 Up 23 seconds (healthy)
+guestbook-web-2 Up 6 seconds (healthy)
+guestbook-web-3 Up 23 seconds (healthy)
+$ docker rm -f d9eb4cec056446430415b2066bfc54b3787534ebda8359695502d38b767bd9e1 >/dev/null && echo 'web 하나 삭제 (docker rm -f)'
+web 하나 삭제 (docker rm -f)
+$ docker compose ps web --format '{{.Name}} {{.Status}}'
+guestbook-web-1 Up 23 seconds (healthy)
+guestbook-web-2 Up 6 seconds (healthy)
+$ /home/edwin/devops/week07/keep-web3.sh --once
+[15:36:39] web 실행 중 2개 (목표 3개) → 복구 시작
+[15:36:40] 복구 완료 → web 3개
+$ docker compose ps web --format '{{.Name}} {{.Status}}'
+guestbook-web-1 Up 31 seconds (healthy)
+guestbook-web-2 Up 13 seconds (healthy)
+guestbook-web-3 Up 6 seconds (healthy)

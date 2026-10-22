@@ -1,0 +1,228 @@
+$ docker compose up -d --build
+ nginx Pulling 
+ redis Pulling 
+ 7b229517ed22 Pulling fs layer 
+ 26185d08a3ec Pulling fs layer 
+ 2ec5fb117ffa Pulling fs layer 
+ b9b388a21ecf Pulling fs layer 
+ 9b0f7dfe35b2 Pulling fs layer 
+ 12b85cff06fd Pulling fs layer 
+ 657023555a2a Pulling fs layer 
+ 7cc330898115 Pulling fs layer 
+ 8bfa4f5e3c40 Pulling fs layer 
+ 6577e1d2b27e Pulling fs layer 
+ 4f4fb700ef54 Pulling fs layer 
+ 5e61c876e615 Pulling fs layer 
+ 766c91354b27 Pulling fs layer 
+ 759efa4719c9 Pulling fs layer 
+ 964ae3503686 Pulling fs layer 
+ 964ae3503686 Download complete 
+ 7cc330898115 Download complete 
+ 26185d08a3ec Download complete 
+ 4f4fb700ef54 Download complete 
+ 2ec5fb117ffa Download complete 
+ 8bfa4f5e3c40 Download complete 
+ b9b388a21ecf Downloading [==>                                                ]  1.049MB/20.53MB
+ 657023555a2a Download complete 
+ 6577e1d2b27e Download complete 
+ 9b0f7dfe35b2 Download complete 
+ 766c91354b27 Download complete 
+ b9b388a21ecf Downloading [==>                                                ]  1.049MB/20.53MB
+ b9b388a21ecf Downloading [=====>                                             ]  2.097MB/20.53MB
+ 5e61c876e615 Downloading [====>                                              ]  1.049MB/12.42MB
+ b9b388a21ecf Downloading [=======>                                           ]  3.146MB/20.53MB
+ 5e61c876e615 Downloading [====>                                              ]  1.049MB/12.42MB
+ b9b388a21ecf Downloading [==========>                                        ]  4.194MB/20.53MB
+ 759efa4719c9 Downloading [==============>                                    ]  1.049MB/3.625MB
+ 7b229517ed22 Downloading [=============>                                     ]  1.049MB/3.853MB
+ b9b388a21ecf Downloading [==========>                                        ]  4.194MB/20.53MB
+ af46001e6b2a Download complete 
+ 5e61c876e615 Downloading [========>                                          ]  2.097MB/12.42MB
+ 7b229517ed22 Downloading [=============>                                     ]  1.049MB/3.853MB
+ b9b388a21ecf Downloading [============>                                      ]  5.243MB/20.53MB
+ 5e61c876e615 Downloading [========>                                          ]  2.097MB/12.42MB
+ 759efa4719c9 Downloading [==============>                                    ]  1.049MB/3.625MB
+ 759efa4719c9 Downloading [==============>                                    ]  1.049MB/3.625MB
+ 5e61c876e615 Downloading [============>                                      ]  3.146MB/12.42MB
+ 7b229517ed22 Downloading [=============>                                     ]  1.049MB/3.853MB
+ b9b388a21ecf Downloading [============>                                      ]  5.243MB/20.53MB
+ 12b85cff06fd Downloading [===========================>                       ]  1.049MB/1.94MB
+ 7b229517ed22 Downloading [===========================>                       ]  2.097MB/3.853MB
+ b9b388a21ecf Downloading [===============>                                   ]  6.291MB/20.53MB
+ 12b85cff06fd Downloading [===========================>                       ]  1.049MB/1.94MB
+ a4d5b1f57abc Download complete 
+ 759efa4719c9 Downloading [============================>                      ]  2.097MB/3.625MB
+ 88a014b50939 Download complete 
+ 5e61c876e615 Downloading [============>                                      ]  3.146MB/12.42MB
+ 7b229517ed22 Downloading [===========================>                       ]  2.097MB/3.853MB
+ b9b388a21ecf Downloading [=================>                                 ]   7.34MB/20.53MB
+ 12b85cff06fd Downloading [===========================>                       ]  1.049MB/1.94MB
+ 5e61c876e615 Downloading [================>                                  ]  4.194MB/12.42MB
+ 759efa4719c9 Downloading [============================>                      ]  2.097MB/3.625MB
+ 7b229517ed22 Downloading [===========================>                       ]  2.097MB/3.853MB
+ b9b388a21ecf Downloading [====================>                              ]  8.389MB/20.53MB
+ 5e61c876e615 Downloading [================>                                  ]  4.194MB/12.42MB
+ 759efa4719c9 Downloading [===========================================>       ]  3.146MB/3.625MB
+ 12b85cff06fd Download complete 
+ 7b229517ed22 Downloading [========================================>          ]  3.146MB/3.853MB
+ b9b388a21ecf Downloading [======================>                            ]  9.437MB/20.53MB
+ 759efa4719c9 Download complete 
+ 5e61c876e615 Downloading [=====================>                             ]  5.243MB/12.42MB
+ 759efa4719c9 Extracting 1 s
+ 5e61c876e615 Downloading [=========================>                         ]  6.291MB/12.42MB
+ 7b229517ed22 Downloading [========================================>          ]  3.146MB/3.853MB
+ b9b388a21ecf Downloading [=========================>                         ]  10.49MB/20.53MB
+ 964ae3503686 Pull complete 
+ 6577e1d2b27e Pull complete 
+ 759efa4719c9 Pull complete 
+ 5e61c876e615 Downloading [=============================>                     ]   7.34MB/12.42MB
+ 7b229517ed22 Downloading [========================================>          ]  3.146MB/3.853MB
+ b9b388a21ecf Downloading [============================>                      ]  11.53MB/20.53MB
+ 5e61c876e615 Downloading [=============================>                     ]   7.34MB/12.42MB
+ acc2d54c3743 Download complete 
+ 7b229517ed22 Download complete 
+ b9b388a21ecf Downloading [==============================>                    ]  12.58MB/20.53MB
+ 12b85cff06fd Extracting 1 s
+ 7b229517ed22 Pull complete 
+ b9b388a21ecf Downloading [=================================>                 ]  13.63MB/20.53MB
+ 5e61c876e615 Downloading [=================================>                 ]  8.389MB/12.42MB
+ 7cc330898115 Pull complete 
+ 26185d08a3ec Pull complete 
+ 2ec5fb117ffa Pull complete 
+ 657023555a2a Pull complete 
+ 9b0f7dfe35b2 Pull complete 
+ 12b85cff06fd Pull complete 
+ 5e61c876e615 Downloading [======================================>            ]  9.437MB/12.42MB
+ b9b388a21ecf Downloading [======================================>            ]  15.73MB/20.53MB
+ b9b388a21ecf Downloading [========================================>          ]  16.78MB/20.53MB
+ 5e61c876e615 Downloading [==========================================>        ]  10.49MB/12.42MB
+ b9b388a21ecf Downloading [===========================================>       ]  17.83MB/20.53MB
+ 5e61c876e615 Downloading [==============================================>    ]  11.53MB/12.42MB
+ b9b388a21ecf Downloading [================================================>  ]  19.92MB/20.53MB
+ 5e61c876e615 Download complete 
+ 5e61c876e615 Extracting 1 s
+ b9b388a21ecf Download complete 
+ 4f4fb700ef54 Pull complete 
+ 8bfa4f5e3c40 Extracting 1 s
+ b9b388a21ecf Extracting 1 s
+ 766c91354b27 Pull complete 
+ 5e61c876e615 Pull complete 
+ 8bfa4f5e3c40 Pull complete 
+ redis Pulled 
+ b9b388a21ecf Extracting 1 s
+ b9b388a21ecf Pull complete 
+ nginx Pulled 
+#1 [internal] load local bake definitions
+#1 reading from stdin 501B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 529B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.12-slim
+#3 DONE 0.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 120B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 1.11kB done
+#5 DONE 0.0s
+
+#6 [1/6] FROM docker.io/library/python:3.12-slim@sha256:cb33f7f771ecec2ef1225cf39b159591a040391bd73e4c01f00fdfc4c47611d2
+#6 resolve docker.io/library/python:3.12-slim@sha256:cb33f7f771ecec2ef1225cf39b159591a040391bd73e4c01f00fdfc4c47611d2 0.0s done
+#6 DONE 0.0s
+
+#7 [2/6] WORKDIR /app
+#7 DONE 0.1s
+
+#8 [3/6] COPY requirements.txt .
+#8 DONE 0.0s
+
+#9 [4/6] RUN pip install --no-cache-dir -r requirements.txt
+#9 1.148 Collecting Flask==3.0.3 (from -r requirements.txt (line 1))
+#9 1.184   Downloading flask-3.0.3-py3-none-any.whl.metadata (3.2 kB)
+#9 1.209 Collecting redis==5.0.7 (from -r requirements.txt (line 2))
+#9 1.221   Downloading redis-5.0.7-py3-none-any.whl.metadata (9.3 kB)
+#9 1.236 Collecting Werkzeug>=3.0.0 (from Flask==3.0.3->-r requirements.txt (line 1))
+#9 1.243   Downloading werkzeug-3.1.9-py3-none-any.whl.metadata (4.1 kB)
+#9 1.254 Collecting Jinja2>=3.1.2 (from Flask==3.0.3->-r requirements.txt (line 1))
+#9 1.263   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+#9 1.271 Collecting itsdangerous>=2.1.2 (from Flask==3.0.3->-r requirements.txt (line 1))
+#9 1.277   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+#9 1.289 Collecting click>=8.1.3 (from Flask==3.0.3->-r requirements.txt (line 1))
+#9 1.296   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+#9 1.306 Collecting blinker>=1.6.2 (from Flask==3.0.3->-r requirements.txt (line 1))
+#9 1.312   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+#9 1.357 Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->Flask==3.0.3->-r requirements.txt (line 1))
+#9 1.367   Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+#9 1.376 Downloading flask-3.0.3-py3-none-any.whl (101 kB)
+#9 1.392 Downloading redis-5.0.7-py3-none-any.whl (252 kB)
+#9 1.419 Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+#9 1.426 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+#9 1.439 Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+#9 1.447 Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+#9 1.459 Downloading werkzeug-3.1.9-py3-none-any.whl (228 kB)
+#9 1.481 Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+#9 1.493 Installing collected packages: redis, MarkupSafe, itsdangerous, click, blinker, Werkzeug, Jinja2, Flask
+#9 1.820 Successfully installed Flask-3.0.3 Jinja2-3.1.6 MarkupSafe-3.0.4 Werkzeug-3.1.9 blinker-1.9.0 click-8.5.0 itsdangerous-2.2.0 redis-5.0.7
+#9 1.820 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#9 1.875 
+#9 1.875 [notice] A new release of pip is available: 25.0.1 -> 26.2.2
+#9 1.875 [notice] To update, run: pip install --upgrade pip
+#9 DONE 1.9s
+
+#10 [5/6] COPY . .
+#10 DONE 0.0s
+
+#11 [6/6] RUN useradd -m appuser
+#11 DONE 0.2s
+
+#12 exporting to image
+#12 exporting layers
+#12 exporting layers 0.4s done
+#12 exporting manifest sha256:a2b124ce94f89a3f2612a75b5a85b4126293a95a28b0798f5736c85eafb2e4bf done
+#12 exporting config sha256:e5ccb71fe5fb11323da3f0e73c6e99def838658313da10f9d0e3e069a72cae07 done
+#12 exporting attestation manifest sha256:419de2a46539ea954f60b7768dd432fe15e773d4adf7b15495ec9e34b9e6bab6 done
+#12 exporting manifest list sha256:9cdfd0819d5774aa8bbe6fe1215eb70dff3327e3e605d304b2386c3983d74db8 done
+#12 naming to docker.io/library/guestbook-web:latest done
+#12 unpacking to docker.io/library/guestbook-web:latest 0.1s done
+#12 DONE 0.6s
+
+#13 resolving provenance for metadata file
+#13 DONE 0.0s
+ guestbook-web  Built
+ Network guestbook_default  Creating
+ Network guestbook_default  Created
+ Volume guestbook_redis-data  Creating
+ Volume guestbook_redis-data  Created
+ Container guestbook-redis-1  Creating
+ Container guestbook-redis-1  Created
+ Container guestbook-web-3  Creating
+ Container guestbook-web-1  Creating
+ Container guestbook-web-2  Creating
+ Container guestbook-web-2  Created
+ Container guestbook-web-1  Created
+ Container guestbook-web-3  Created
+ Container guestbook-nginx-1  Creating
+ Container guestbook-nginx-1  Created
+ Container guestbook-redis-1  Starting
+ Container guestbook-redis-1  Started
+ Container guestbook-redis-1  Waiting
+ Container guestbook-redis-1  Healthy
+ Container guestbook-web-1  Starting
+ Container guestbook-web-1  Started
+ Container guestbook-web-3  Starting
+ Container guestbook-web-3  Started
+ Container guestbook-web-2  Starting
+ Container guestbook-web-2  Started
+ Container guestbook-web-1  Waiting
+ Container guestbook-web-3  Waiting
+ Container guestbook-web-2  Waiting
+ Container guestbook-web-1  Healthy
+ Container guestbook-web-3  Healthy
+ Container guestbook-web-2  Healthy
+ Container guestbook-nginx-1  Starting
+ Container guestbook-nginx-1  Started

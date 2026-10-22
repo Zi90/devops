@@ -1,0 +1,19 @@
+$ bash test/var.sh
+이름: 홍길동
+파일명: backup_20261022.tar.gz
+$ bash test/greet.sh; echo "종료 코드: $?"
+사용법: test/greet.sh [이름]
+종료 코드: 1
+$ bash test/greet.sh Edwin
+안녕하세요, Edwin님! (인자 개수: 1)
+$ bash test/check.sh test
+디렉터리
+$ bash test/check.sh test/server.log
+파일
+$ bash test/check.sh nothing; echo "종료 코드: $?"
+없음
+종료 코드: 1
+$ for f in test/*.sh; do echo "스크립트: $f"; done
+스크립트: test/check.sh
+스크립트: test/greet.sh
+스크립트: test/var.sh

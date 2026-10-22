@@ -1,0 +1,9 @@
+$ curl -s http://localhost:8090
+<h1>Edwin week04 web server</h1>
+$ ss -tln | grep -E 'State|:8090'
+State  Recv-Q Send-Q  Local Address:Port  Peer Address:PortProcess
+LISTEN 0      5             0.0.0.0:8090       0.0.0.0:*          
+$ cd /tmp/week04-web && timeout 3 python3 -m http.server 8090 2>&1 | tail -1
+OSError: [Errno 98] Address already in use
+$ kill 1114; sleep 1; ss -tln | grep -q ':8090 ' || echo '8090 포트 해제됨'
+8090 포트 해제됨

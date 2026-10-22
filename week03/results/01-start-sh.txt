@@ -1,0 +1,10 @@
+$ ls -l
+total 20
+-rw-r--r-- 1 edwin edwin 5265 Sep 14 17:23 chat.py
+-rwxr-xr-x 1 edwin edwin  518 Oct 22 15:12 start.sh
+-rwxr-xr-x 1 edwin edwin  143 Oct 22 15:12 start_with_export.sh
+-rwxr-xr-x 1 edwin edwin  127 Oct 22 15:12 start_with_export_2.sh
+$ head -1 start.sh
+#!/bin/bash
+$ bash -n start.sh && echo '문법 검사 통과'
+문법 검사 통과

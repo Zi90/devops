@@ -1,0 +1,10 @@
+$ ls -l
+total 16
+-rw-r--r-- 1 edwin edwin 3624 Oct 22 15:12 README.md
+-rw-r--r-- 1 edwin edwin    3 Sep 14 17:51 hello.txt
+drwxr-xr-x 2 edwin edwin 4096 Oct 22 15:14 results
+-rw-r--r-- 1 edwin edwin   15 Sep 14 17:50 text.txt
+$ cat hello.txt
+hi
+$ cat text.txt
+Hello, Devops!
