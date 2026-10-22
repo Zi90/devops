@@ -50,7 +50,7 @@ $ docker compose config --quiet && echo OK
 OK
 $ docker compose config | grep requirepass -A1
       - --requirepass
-      - devops1234
+      - ********
 ```
 <!-- /RESULT -->
 

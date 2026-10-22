@@ -39,7 +39,7 @@ rm -f "$OUT"/*.txt
 
 step "0. .env 준비 (Git에는 올리지 않음)"
 if [ ! -f .env ]; then
-    echo "REDIS_PASSWORD=devops1234" > .env
+    echo "REDIS_PASSWORD=$(openssl rand -hex 12)" > .env
     echo ".env 생성"
 fi
 grep -qx ".env" "$ROOT/.gitignore" 2>/dev/null || echo ".env" >> "$ROOT/.gitignore"
