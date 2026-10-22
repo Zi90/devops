@@ -1,0 +1,3 @@
+$ ollama list
+NAME          ID              SIZE      MODIFIED    
+qwen3:0.6b    7df6b6e09427    522 MB    5 weeks ago    

@@ -1,0 +1,25 @@
+$ docker ps --format '{{.ID}} {{.Names}}' | sort -k2
+64e915dadd44 guestbook-nginx-1
+cf062a0301dc guestbook-redis-1
+718d42adf5c9 guestbook-web-1
+165deeae14e4 guestbook-web-2
+45e318028ea9 guestbook-web-3
+$ for i in 1 2 3 4 5 6 7 8 9; do curl -s localhost:8080/healthz; echo; done
+{"hostname":"45e318028ea9","status":"ok"}
+
+{"hostname":"718d42adf5c9","status":"ok"}
+
+{"hostname":"718d42adf5c9","status":"ok"}
+
+{"hostname":"165deeae14e4","status":"ok"}
+
+{"hostname":"718d42adf5c9","status":"ok"}
+
+{"hostname":"718d42adf5c9","status":"ok"}
+
+{"hostname":"45e318028ea9","status":"ok"}
+
+{"hostname":"718d42adf5c9","status":"ok"}
+
+{"hostname":"718d42adf5c9","status":"ok"}
+

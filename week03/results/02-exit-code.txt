@@ -1,0 +1,8 @@
+$ command -v python3; echo "종료 코드: $?"
+/usr/bin/python3
+종료 코드: 0
+$ command -v 없는명령; echo "종료 코드: $?"
+종료 코드: 1
+$ cd /no-such-dir || echo '실패하면 || 뒤가 실행됨'
+bash: line 1: cd: /no-such-dir: No such file or directory
+실패하면 || 뒤가 실행됨

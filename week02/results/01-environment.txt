@@ -1,0 +1,14 @@
+$ whoami
+edwin
+$ uname -r
+6.18.33.2-microsoft-standard-WSL2
+$ grep -E '^(NAME|VERSION)=' /etc/os-release
+NAME="Ubuntu"
+VERSION="24.04.4 LTS (Noble Numbat)"
+$ pwd
+/home/edwin/devops/week02
+$ df -h / | tail -1
+/dev/sdd       1007G  4.9G  951G   1% /
+$ free -h | head -2
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       595Mi        14Gi       3.5Mi       290Mi        14Gi

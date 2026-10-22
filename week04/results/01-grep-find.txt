@@ -1,0 +1,26 @@
+$ find /home/edwin/devops -type f -name '*.sh' -not -path '*/.git/*' | sed "s|/home/edwin/devops/||" | sort
+scripts/publish.sh
+scripts/run-all.sh
+scripts/run-week02-04.sh
+scripts/run-week05.sh
+scripts/run-week07.sh
+week03/qwen-web/start.sh
+week03/qwen-web/start_with_export.sh
+week03/qwen-web/start_with_export_2.sh
+week04/backup.sh
+week04/test/check.sh
+week04/test/greet.sh
+week04/test/var.sh
+week07/keep-web3.sh
+$ grep ERROR test/server.log
+2026-07-13 10:02:11 ERROR DB 연결 끊김
+2026-07-13 10:02:12 ERROR 재시도 실패
+2026-07-13 10:09:13 ERROR 요청 타임아웃
+$ grep -c ERROR test/server.log
+3
+$ grep -v INFO test/server.log | wc -l
+5
+$ grep -R -n 'exit 1' test | head -5
+test/greet.sh:4:  exit 1
+test/check.sh:4:  echo "파일명을 입력하세요"; exit 1
+test/check.sh:12:  echo "없음"; exit 1

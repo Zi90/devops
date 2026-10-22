@@ -1,0 +1,43 @@
+$ docker run -d -p 8080:80 --name web nginx
+Unable to find image 'nginx:latest' locally
+latest: Pulling from library/nginx
+9a2c3eb3312e: Pulling fs layer
+8334177aa35b: Pulling fs layer
+dd00b11a22aa: Pulling fs layer
+24bf03b6a474: Pulling fs layer
+a856bfc2a772: Pulling fs layer
+f2be67225471: Pulling fs layer
+d5f3a4724daf: Pulling fs layer
+9a2c3eb3312e: Download complete
+8334177aa35b: Download complete
+dd00b11a22aa: Download complete
+24bf03b6a474: Download complete
+a856bfc2a772: Download complete
+ee284e8d8c11: Download complete
+6542b5f86ffd: Download complete
+d5f3a4724daf: Download complete
+f2be67225471: Download complete
+f2be67225471: Pull complete
+9a2c3eb3312e: Pull complete
+8334177aa35b: Pull complete
+dd00b11a22aa: Pull complete
+24bf03b6a474: Pull complete
+a856bfc2a772: Pull complete
+d5f3a4724daf: Pull complete
+Digest: sha256:4c41e2d0a3a55b325ed572cd0200bdb72af1433c3daa2bca6ef8eea68ce504a2
+Status: Downloaded newer image for nginx:latest
+5a45da5148f4e61d2ef80a5f6fd6e69262c6ceb07ae191f313db0a40b1ec6a0c
+$ curl -sI http://localhost:8080 | head -3
+HTTP/1.1 200 OK
+Server: nginx/1.31.8
+Date: Thu, 22 Oct 2026 06:14:20 GMT
+$ docker ps --format 'table {{.Names}}\t{{.Image}}\t{{.Ports}}\t{{.Status}}'
+NAMES     IMAGE     PORTS                                     STATUS
+web       nginx     0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   Up 2 seconds
+$ docker logs web 2>&1 | tail -3
+2026/10/22 06:14:18 [notice] 1#1: start worker process 36
+2026/10/22 06:14:18 [notice] 1#1: start worker process 37
+172.17.0.1 - - [22/Oct/2026:06:14:20 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/8.5.0" "-"
+$ docker exec web cat /etc/os-release | head -2
+PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+NAME="Debian GNU/Linux"

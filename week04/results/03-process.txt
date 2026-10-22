@@ -1,0 +1,5 @@
+$ ps -o pid,stat,cmd -p 1035
+    PID STAT CMD
+   1035 S+   sleep 300
+$ kill 1035; sleep 1; ps -p 1035 >/dev/null || echo 'PID 1035 종료됨 (SIGTERM)'
+PID 1035 종료됨 (SIGTERM)

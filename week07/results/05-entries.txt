@@ -1,0 +1,2 @@
+$ curl -s localhost:8080/api/entries
+{"count":3,"entries":[{"message":"nginx\uac00 web 3\uac1c\uc5d0 \uc694\uccad\uc744 \ub098\ub220\uc90c","name":"Edwin","time":"2026-10-22 06:35"},{"message":"web\uc744 \uc7ac\uc2dc\uc791\ud574\ub3c4 \uae00\uc774 \ub0a8\ub294\uc9c0 \ud655\uc778","name":"Edwin","time":"2026-10-22 06:35"},{"message":"7\uc8fc\ucc28 compose \uc2e4\uc2b5 \uccab \uae00","name":"Edwin","time":"2026-10-22 06:35"}]}

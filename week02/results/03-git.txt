@@ -1,0 +1,8 @@
+$ git --version
+git version 2.43.0
+$ git -C /home/edwin/devops remote -v
+origin	https://github.com/Zi90/devops.git (fetch)
+origin	https://github.com/Zi90/devops.git (push)
+$ git -C /home/edwin/devops log --oneline --reverse | head -5
+1603c8e devops
+c2cbeeb week06: 나만의 방명록 v2

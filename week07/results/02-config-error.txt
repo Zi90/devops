@@ -1,0 +1,2 @@
+$ REDIS_PASSWORD= docker compose config --quiet
+error while interpolating services.web.environment.REDIS_PASSWORD: required variable REDIS_PASSWORD is missing a value: 비밀번호 설정 필요

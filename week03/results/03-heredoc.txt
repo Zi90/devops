@@ -1,0 +1,8 @@
+$ MODEL=qwen3; cat << 'END'
+echo "$MODEL"
+END
+echo "$MODEL"
+$ MODEL=qwen3; cat << END
+echo "$MODEL"
+END
+echo "qwen3"

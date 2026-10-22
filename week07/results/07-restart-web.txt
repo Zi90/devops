@@ -1,0 +1,11 @@
+$ echo 재시작 전 글 개수: $(count_entries)
+재시작 전 글 개수: 3
+$ docker compose restart web
+ Container guestbook-web-2  Restarting
+ Container guestbook-web-1  Restarting
+ Container guestbook-web-3  Restarting
+ Container guestbook-web-2  Started
+ Container guestbook-web-3  Started
+ Container guestbook-web-1  Started
+$ echo 재시작 후 글 개수: $(count_entries)
+재시작 후 글 개수: 3

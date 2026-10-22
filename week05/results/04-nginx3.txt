@@ -1,0 +1,18 @@
+$ docker run -d -p 8091:80 --name nginx1 nginx
+9d0a65b2977c86cc68faabb8f34adf3fabd6d7cf9886e394a076d35633033301
+$ docker run -d -p 8092:80 --name nginx2 nginx
+39f31bd23e0556c0cb488130980deca3b88de3c6c25f0f82f542806ec540ff52
+$ docker run -d -p 8093:80 --name nginx3 nginx
+35096eb58973e74544379811b76c36a6527691f5a19638fb956b8753b809611a
+$ curl -s http://localhost:8091
+<h1>nginx1 - Edwin의 컨테이너 1번</h1>
+$ curl -s http://localhost:8092
+<h1>nginx2 - Edwin의 컨테이너 2번</h1>
+$ curl -s http://localhost:8093
+<h1>nginx3 - Edwin의 컨테이너 3번</h1>
+$ docker ps --format 'table {{.Names}}\t{{.Ports}}\t{{.Status}}'
+NAMES     PORTS                                     STATUS
+nginx3    0.0.0.0:8093->80/tcp, [::]:8093->80/tcp   Up 2 seconds
+nginx2    0.0.0.0:8092->80/tcp, [::]:8092->80/tcp   Up 2 seconds
+nginx1    0.0.0.0:8091->80/tcp, [::]:8091->80/tcp   Up 2 seconds
+web       0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   Up 24 seconds

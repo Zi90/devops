@@ -1,0 +1,7 @@
+$ docker rm -f web nginx1 nginx2 nginx3
+web
+nginx1
+nginx2
+nginx3
+$ docker ps -a --format '{{.Names}}' | grep -E '^(web|nginx[123])$' || echo '정리 완료'
+정리 완료

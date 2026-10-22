@@ -1,0 +1,122 @@
+$ echo down 전 글 개수: $(count_entries)
+down 전 글 개수: 3
+$ docker compose down
+ Container guestbook-nginx-1  Stopping
+ Container guestbook-nginx-1  Stopped
+ Container guestbook-nginx-1  Removing
+ Container guestbook-nginx-1  Removed
+ Container guestbook-web-2  Stopping
+ Container guestbook-web-1  Stopping
+ Container guestbook-web-3  Stopping
+ Container guestbook-web-1  Stopped
+ Container guestbook-web-1  Removing
+ Container guestbook-web-1  Removed
+ Container guestbook-web-2  Stopped
+ Container guestbook-web-2  Removing
+ Container guestbook-web-2  Removed
+ Container guestbook-web-3  Stopped
+ Container guestbook-web-3  Removing
+ Container guestbook-web-3  Removed
+ Container guestbook-redis-1  Stopping
+ Container guestbook-redis-1  Stopped
+ Container guestbook-redis-1  Removing
+ Container guestbook-redis-1  Removed
+ Network guestbook_default  Removing
+ Network guestbook_default  Removed
+$ docker volume ls | grep redis-data
+local     guestbook_redis-data
+$ docker compose up -d
+ Network guestbook_default  Creating
+ Network guestbook_default  Created
+ Container guestbook-redis-1  Creating
+ Container guestbook-redis-1  Created
+ Container guestbook-web-3  Creating
+ Container guestbook-web-1  Creating
+ Container guestbook-web-2  Creating
+ Container guestbook-web-3  Created
+ Container guestbook-web-2  Created
+ Container guestbook-web-1  Created
+ Container guestbook-nginx-1  Creating
+ Container guestbook-nginx-1  Created
+ Container guestbook-redis-1  Starting
+ Container guestbook-redis-1  Started
+ Container guestbook-redis-1  Waiting
+ Container guestbook-redis-1  Healthy
+ Container guestbook-web-2  Starting
+ Container guestbook-web-2  Started
+ Container guestbook-web-1  Starting
+ Container guestbook-web-1  Started
+ Container guestbook-web-3  Starting
+ Container guestbook-web-3  Started
+ Container guestbook-web-2  Waiting
+ Container guestbook-web-1  Waiting
+ Container guestbook-web-3  Waiting
+ Container guestbook-web-2  Healthy
+ Container guestbook-web-1  Healthy
+ Container guestbook-web-3  Healthy
+ Container guestbook-nginx-1  Starting
+ Container guestbook-nginx-1  Started
+$ echo down 후 up, 글 개수: $(count_entries)
+down 후 up, 글 개수: 3
+$ docker compose down -v
+ Container guestbook-nginx-1  Stopping
+ Container guestbook-nginx-1  Stopped
+ Container guestbook-nginx-1  Removing
+ Container guestbook-nginx-1  Removed
+ Container guestbook-web-3  Stopping
+ Container guestbook-web-2  Stopping
+ Container guestbook-web-1  Stopping
+ Container guestbook-web-3  Stopped
+ Container guestbook-web-3  Removing
+ Container guestbook-web-3  Removed
+ Container guestbook-web-2  Stopped
+ Container guestbook-web-2  Removing
+ Container guestbook-web-2  Removed
+ Container guestbook-web-1  Stopped
+ Container guestbook-web-1  Removing
+ Container guestbook-web-1  Removed
+ Container guestbook-redis-1  Stopping
+ Container guestbook-redis-1  Stopped
+ Container guestbook-redis-1  Removing
+ Container guestbook-redis-1  Removed
+ Network guestbook_default  Removing
+ Volume guestbook_redis-data  Removing
+ Volume guestbook_redis-data  Removed
+ Network guestbook_default  Removed
+$ docker volume ls | grep redis-data || echo '볼륨 없음'
+볼륨 없음
+$ docker compose up -d
+ Network guestbook_default  Creating
+ Network guestbook_default  Created
+ Volume guestbook_redis-data  Creating
+ Volume guestbook_redis-data  Created
+ Container guestbook-redis-1  Creating
+ Container guestbook-redis-1  Created
+ Container guestbook-web-3  Creating
+ Container guestbook-web-1  Creating
+ Container guestbook-web-2  Creating
+ Container guestbook-web-1  Created
+ Container guestbook-web-2  Created
+ Container guestbook-web-3  Created
+ Container guestbook-nginx-1  Creating
+ Container guestbook-nginx-1  Created
+ Container guestbook-redis-1  Starting
+ Container guestbook-redis-1  Started
+ Container guestbook-redis-1  Waiting
+ Container guestbook-redis-1  Healthy
+ Container guestbook-web-2  Starting
+ Container guestbook-web-2  Started
+ Container guestbook-web-3  Starting
+ Container guestbook-web-3  Started
+ Container guestbook-web-1  Starting
+ Container guestbook-web-1  Started
+ Container guestbook-web-2  Waiting
+ Container guestbook-web-3  Waiting
+ Container guestbook-web-1  Waiting
+ Container guestbook-web-2  Healthy
+ Container guestbook-web-3  Healthy
+ Container guestbook-web-1  Healthy
+ Container guestbook-nginx-1  Starting
+ Container guestbook-nginx-1  Started
+$ echo down -v 후 up, 글 개수: $(count_entries)
+down -v 후 up, 글 개수: 0

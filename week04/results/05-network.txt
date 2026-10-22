@@ -1,0 +1,12 @@
+$ ip -4 addr show | grep inet
+    inet 127.0.0.1/8 scope host lo
+    inet 10.255.255.254/32 brd 10.255.255.254 scope global lo
+    inet 172.27.153.47/20 brd 172.27.159.255 scope global eth0
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+$ ping -c 2 8.8.8.8 | tail -2
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+rtt min/avg/max/mdev = 35.155/35.970/36.786/0.815 ms
+$ getent hosts github.com
+20.200.245.247  github.com
+$ curl -sI https://github.com | head -1
+HTTP/2 200 
