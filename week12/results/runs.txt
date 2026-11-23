@@ -1,0 +1,8 @@
+in_progress		깨진 코드로 PR	Build and Push Image	feature/broken-test	pull_request	43850033736	30s	2026-11-16T10:34:16Z
+completed	failure	깨진 코드로 PR	Build and Push Image	feature/broken-test	pull_request	43849970770	24s	2026-11-16T10:33:50Z
+completed	success	문법 오류 확인	Build and Push Image	feature/ci-errors	pull_request	43848627144	1m5s	2026-11-16T10:25:01Z
+completed	failure	문법 오류 확인	Build and Push Image	feature/ci-errors	pull_request	43848517414	10s	2026-11-16T10:24:16Z
+completed	success	문법 오류 확인	Build and Push Image	feature/ci-errors	pull_request	43848054395	1m6s	2026-11-16T10:21:09Z
+completed	failure	문법 오류 확인	Build and Push Image	feature/ci-errors	pull_request	43847941424	14s	2026-11-16T10:20:24Z
+completed	success	CI 파이프라인 추가 (#3)	Build and Push Image	main	push	43847489280	1m15s	2026-11-16T10:17:21Z
+completed	success	CI 파이프라인 추가	Build and Push Image	feature/ci-setup	pull_request	43846814290	1m11s	2026-11-16T10:12:59Z
